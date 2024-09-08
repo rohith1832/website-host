@@ -1,0 +1,245 @@
+/* General styles */
+body {
+    font-family: Outfit, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+  
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+  
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+  
+.logo-container img {
+    width: 50px; /* Adjust the width as needed */
+}
+  
+.logo-text {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Add chevron to the dropdown items */
+nav ul li.chevron::after {
+    content: "\25BC"; /* Unicode character for chevron down */
+    font-size: 12px;
+    margin-left: 5px;
+}
+  
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+nav ul li:hover .dropdown {
+    display: block;
+}
+  
+/* Styles for smaller text in About Us, Contact Us, and Donate */
+.small-text a {
+    font-size: 14px;
+}
+  
+/* Styles for larger text in Login and Register */
+.large-text a {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+/* Login button with black outline and drop shadow */
+.large-text a.login {
+    border: 2px solid black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    color: black;
+}
+  
+/* Register button with black background and white text */
+.large-text a.register {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* Button styles for "Login with Gmail account" and "More options" */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0; /* Add vertical margin for spacing */
+}
+
+.black-background {
+    background-color: black;
+}
+
+/* Container for centering the buttons */
+.login-options {
+    text-align: center; /* Center the content */
+    margin-top: 20px;
+}
+
+.login-with-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the logo and text */
+    margin-left: -30px;
+}
+
+/* Adjust the logo size */
+.google-logo {
+    width: 40px; /* Adjust the size of the logo */
+    height: 40px; /* Maintain aspect ratio */
+}
+
+/* Styles for the "or" separator line */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; 
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 0 1 100px; 
+    border-bottom: 1px solid #000; 
+    margin: 0 10px; 
+}
+  
+.main-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 30px;
+}
+.media-container {
+    position: relative;
+    margin-top: 40px;
+    width: 100%; 
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center; 
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.media-container img {
+    width: 100%;
+    display: block;
+    align-items: center; 
+    margin: 2rem;
+
+    
+}
+.image-container{
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: flex-end;
+}
+#img{
+    justify-content: left;
+}
+#app1{
+    justify-content: right;
+   
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly; /* Align text to the left */
+    align-items: flex-start; /* Align text to the top */
+    padding: 20px; /* Add padding for spacing around text */
+    box-sizing: border-box; /* Include padding in the element’s total width and height */
+    font-size: 24px;
+    text-align: left; /* Ensure text aligns to the left */
+}
+
+/* App buttons styling */
+
+
+.app-buttons img {
+    margin-right: 10px;
+    
+}
+
+
+/* New text and image container class */
+.text-image-container {
+    margin-top: 40px;
+    text-align: center;
+    max-width: 800px; /* Optional: limit the max-width to control size */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.text-image-container p {
+    margin: 20px 0; /* Space above and below text */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.text-image-container img {
+    width: 100%; /* Ensure the image takes full width of the container */
+    max-width: 500px; /* Optional: limit the max-width to control size */
+    display: inline-block; /* Remove any inline spacing issues */
+    margin: 20px auto; /* Center the image horizontally */
+    
+    
+}
+.img-con{
+    display: inline-block; 
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}

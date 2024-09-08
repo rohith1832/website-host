@@ -1,0 +1,127 @@
+body {
+    font-family: Outfit, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem; /* Increases the base text size */
+}
+
+.login-container {
+    width: 350px; /* Increase container size */
+    margin: 0 auto;
+    padding: 30px; /* Increase padding inside container */
+    /*border: 1px solid #ccc;
+    border-radius: 5px;*/
+}
+
+h1 {
+    font-size: 1.5rem; /* Increase heading size */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px; /* Increase spacing between label and input */
+    font-size: 1rem; /* Increase label font size */
+    padding-left: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 15px; /* Increase padding inside input fields */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-bottom: 20px; /* Increase space between input fields */
+    font-size: 1rem; /* Increase input text size */
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 25px; /* Increase button size */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Increase button text size */
+    text-align: center;
+}
+
+.forgot-password {
+    text-align: right; /* Aligns text to the right */
+    width: 100%;
+    margin-bottom: 20px; /* Ensures space from other elements */
+}
+
+.forgot-password a {
+    font-size: 0.9rem; /* Smaller font size for "Forgot password?" */
+    color: #72717F; /* Optional: change color to match button or other theme */
+    text-decoration: none;
+}
+
+/* Styles for the "or" separator line */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; 
+    font-size: 1rem; /* Adjust font size if needed */
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1; /* Ensures lines take up available space equally */
+    border-bottom: 2px solid #fff; /* Change border color if needed */
+    margin: 0 10px; /* Space between lines and text */
+}
+
+.separator span {
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+
+.social-login {
+    display: flex;
+    justify-content: center; /* Center the social login items horizontally */
+    margin-bottom: 20px;
+}
+
+.social-login a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 20px; /* Add horizontal space between social login items */
+}
+
+.social-login img {
+    width: 200px; /* Set the size of the logos */
+    height: auto;
+    border-radius: 50px; /* Adjust the value for desired curve */
+}
+
+
+
+p {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    font-size: 1rem; /* Increase paragraph text size */
+    color: #72717F; /* Color for "New to LawEase?" */
+}
+
+.create-account {
+    color: #0c0cf0; /* White color for "create an account" */
+    text-decoration: none; /* Remove underline */
+}
+
+.create-account:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
